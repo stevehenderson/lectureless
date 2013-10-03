@@ -10,4 +10,10 @@
 
 @interface FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UITextField *myTextBox;
+
+
+- (IBAction)updateSlider:(id)sender;
+
 @end

@@ -12,7 +12,13 @@
 
 @end
 
+
+
 @implementation FirstViewController
+
+@synthesize slider;
+@synthesize myTextBox;
+
 
 - (void)viewDidLoad
 {
@@ -26,4 +32,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+- (IBAction)updateSlider:(id)sender {
+    UISlider *stepper = (UISlider *) sender;
+    myTextBox.text = [NSString stringWithFormat:@" %.1f", [stepper value]];
+
+
+}
 @end
