@@ -7,13 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface FirstViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UISlider *slider;
-@property (weak, nonatomic) IBOutlet UITextField *myTextBox;
+
+@property (weak, nonatomic) IBOutlet UISlider *comprehensionSlider;
+@property (weak, nonatomic) IBOutlet UISlider *interactionSlider;
+
+@property (weak, nonatomic) IBOutlet UISlider *motivationSlider;
+
+- (IBAction)comprehensionChanged:(id)sender;
+- (IBAction)interactionChanged:(id)sender;
+- (IBAction)motivationChanged:(id)sender;
 
 
-- (IBAction)updateSlider:(id)sender;
+
+
 
 @end

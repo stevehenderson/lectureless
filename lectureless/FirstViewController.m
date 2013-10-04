@@ -16,8 +16,9 @@
 
 @implementation FirstViewController
 
-@synthesize slider;
-@synthesize myTextBox;
+@synthesize comprehensionSlider;
+@synthesize interactionSlider;
+@synthesize motivationSlider;
 
 
 - (void)viewDidLoad
@@ -34,10 +35,37 @@
 
 
 
-- (IBAction)updateSlider:(id)sender {
+- (IBAction)comprehensionChanged:(id)sender {
     UISlider *stepper = (UISlider *) sender;
-    myTextBox.text = [NSString stringWithFormat:@" %.1f", [stepper value]];
+    NSLog(@"Comprehension now %.1f", [stepper value]);
+  
+    /*
+    // Create our Installation query
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+    
+    // Send push notification to query
+    [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                   withMessage:@"Hello World!"];
+*/
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+}
 
+
+- (IBAction)interactionChanged:(id)sender {
+    UISlider *stepper = (UISlider *) sender;
+   NSLog(@"Interaction now %.1f", [stepper value]);
 
 }
+
+- (IBAction)motivationChanged:(id)sender {
+    UISlider *stepper = (UISlider *) sender;
+    NSLog(@"Motivation now %.1f", [stepper value]);
+
+}
+
+
+
 @end

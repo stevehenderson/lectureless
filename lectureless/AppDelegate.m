@@ -5,7 +5,7 @@
 //  Created by Steve Henderson on 10/2/13.
 //  Copyright (c) 2013 Steve Henderson. All rights reserved.
 //
-
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -13,9 +13,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"vJsvyNg9O9HHbFspe3NM6ZMkQXnBSWTQDghC0qPZ"
+                  clientKey:@"r07oDqkxRBYJaN50UG8vX9uU4Vxb3fYz91NDLV2l"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+   
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -42,5 +49,17 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
 
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
 @end
