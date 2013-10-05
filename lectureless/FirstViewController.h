@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "SingletonObject.h"
 
-@interface FirstViewController : UIViewController
+
+@interface FirstViewController : UIViewController{
+    SingletonObject * sobj;
+    float comprehension;
+    float interaction;
+    float motivation;
+    NSUserDefaults * standardUserDefaults;
+    
+}
 
 
 @property (weak, nonatomic) IBOutlet UISlider *comprehensionSlider;
@@ -17,9 +26,16 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *motivationSlider;
 
-- (IBAction)comprehensionChanged:(id)sender;
+- (void) pushLatest;
+- (void) updateComprehension:(id)sender;
+- (void) updateMotivation:(id)sender;
+- (void) updateInteraction:(id)sender;
+
 - (IBAction)interactionChanged:(id)sender;
 - (IBAction)motivationChanged:(id)sender;
+- (IBAction)motivationDoneChanging:(id)sender;
+- (IBAction)comprehensionTouchUpInside:(id)sender;
+- (IBAction)comprehensionTouchUpOutside:(id)sender;
 
 
 

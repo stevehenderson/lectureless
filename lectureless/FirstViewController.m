@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "SecondViewController.h"
 @interface FirstViewController ()
 
 @end
@@ -21,8 +21,38 @@
 @synthesize motivationSlider;
 
 
+- (NSString *) identifierForVendor
+{
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]) {
+        return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    }
+    return @"";
+}
+
+
 - (void)viewDidLoad
 {
+    
+    // create a standardUserDefaults variable
+    standardUserDefaults = [NSUserDefaults standardUserDefaults];
+
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"course"] == nil) {
+        [standardUserDefaults setObject:@"UNSET" forKey:@"course"];
+        [standardUserDefaults synchronize];
+    }
+  
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"section"] == nil) {
+        [standardUserDefaults setObject:@"UNSET" forKey:@"section"];
+        [standardUserDefaults synchronize];
+    }
+  
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"id"] == nil) {
+        NSString *vendorID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        [standardUserDefaults setObject:vendorID forKey:@"id"];
+        [standardUserDefaults synchronize];
+    }
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,36 +64,92 @@
 }
 
 
+- (void)pushLatest {
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    
+    NSString *cValue = [NSString stringWithFormat:@"%f", comprehension];
+    [testObject setObject:cValue forKey:@"comprehension"];
+    
+    
+    NSString *iValue = [NSString stringWithFormat:@"%f", interaction];
+    [testObject setObject:iValue forKey:@"interaction"];
+    
+    
+    NSString *mValue = [NSString stringWithFormat:@"%f", motivation];
+    [testObject setObject:mValue forKey:@"motivation"];
+    
+    
+    NSString *courseValue = [standardUserDefaults stringForKey:@"course"];
+    NSString *sectionValue =[standardUserDefaults stringForKey:@"section"];
+    NSString *clientID =[standardUserDefaults stringForKey:@"id"];
+    
+    
+    [testObject setObject:courseValue forKey:@"course"];
+    
+    [testObject setObject:sectionValue forKey:@"section"];
+
+    
+    
+    [testObject setObject:clientID forKey:@"id"];
+    
+    
+    [testObject save];
+    
+}
+
+
+- (void) updateComprehension :(id)sender {
+    UISlider *stepper = (UISlider *) sender;
+    stepper.continuous=false;
+   
+    NSLog(@"Comprehension now %.1f", [stepper value]);
+    comprehension=stepper.value;
+    [self pushLatest];
+}
+
+
+- (void) updateMotivation :(id)sender {
+    UISlider *stepper = (UISlider *) sender;
+    stepper.continuous=false;
+    NSLog(@"Motivation now %.1f", [stepper value]);
+    motivation=stepper.value;
+    [self pushLatest];
+}
+
+
+- (void) updateInteraction :(id)sender {
+    UISlider *stepper = (UISlider *) sender;
+    stepper.continuous=false;
+    NSLog(@"Interaction now %.1f", [stepper value]);
+    interaction=stepper.value;
+    [self pushLatest];
+}
 
 - (IBAction)comprehensionChanged:(id)sender {
-    UISlider *stepper = (UISlider *) sender;
-    NSLog(@"Comprehension now %.1f", [stepper value]);
-  
-    /*
-    // Create our Installation query
-    PFQuery *pushQuery = [PFInstallation query];
-    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+      
     
-    // Send push notification to query
-    [PFPush sendPushMessageToQueryInBackground:pushQuery
-                                   withMessage:@"Hello World!"];
-*/
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
 }
 
 
 - (IBAction)interactionChanged:(id)sender {
-    UISlider *stepper = (UISlider *) sender;
-   NSLog(@"Interaction now %.1f", [stepper value]);
+   [self updateInteraction:sender];
 
 }
 
 - (IBAction)motivationChanged:(id)sender {
-    UISlider *stepper = (UISlider *) sender;
-    NSLog(@"Motivation now %.1f", [stepper value]);
+    [self updateMotivation:sender];
+}
 
+- (IBAction)motivationDoneChanging:(id)sender {
+   }
+
+- (IBAction)comprehensionTouchUpInside:(id)sender {
+    //[self updateComprehension:sender];
+}
+
+- (IBAction)comprehensionTouchUpOutside:(id)sender {
+    [self updateComprehension:sender];
 }
 
 

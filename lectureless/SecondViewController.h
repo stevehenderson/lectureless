@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SingletonObject.h"
 
-@interface SecondViewController : UIViewController
+
+@interface SecondViewController : UIViewController{
+    SingletonObject * sobj;
+    NSUserDefaults* standardUserDefaults;
+
+    
+}
+
+
+@property (weak, nonatomic) IBOutlet UITextField *course;
+@property (weak, nonatomic) IBOutlet UITextField *section;
+@property (weak, nonatomic) IBOutlet UITextField *vendorId;
+
+
+
+- (IBAction)updateCourse:(id)sender;
+- (IBAction)updateSection:(id)sender;
 
 @end
