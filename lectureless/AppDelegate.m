@@ -13,8 +13,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [Parse setApplicationId:@"vJsvyNg9O9HHbFspe3NM6ZMkQXnBSWTQDghC0qPZ"
-                  clientKey:@"r07oDqkxRBYJaN50UG8vX9uU4Vxb3fYz91NDLV2l"];
+    [Parse setApplicationId:@"foo"
+                  clientKey:@"bar"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
    
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
