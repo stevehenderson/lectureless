@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6B2163D-8641-4025-A063-5F3CF25BCF71</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lectureless</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>81004717-2CA3-4F96-BACF-73AC1EF35806</key>
+		<string>https://github.com/stevehenderson/lectureless.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lectureless.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81004717-2CA3-4F96-BACF-73AC1EF35806</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/stevehenderson/lectureless.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81004717-2CA3-4F96-BACF-73AC1EF35806</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81004717-2CA3-4F96-BACF-73AC1EF35806</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lectureless</string>
+		</dict>
+	</array>
+</dict>
+</plist>
