@@ -34,9 +34,9 @@
         [standardUserDefaults synchronize];
     }
     
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"id"] == nil) {
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"lecturelessId"] == nil) {
         NSString *vendorID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        [standardUserDefaults setObject:vendorID forKey:@"id"];
+        [standardUserDefaults setObject:vendorID forKey:@"lecturelessId"];
         [standardUserDefaults synchronize];
     }
     
@@ -45,7 +45,7 @@
     
     NSString *courseValue = [standardUserDefaults stringForKey:@"course"];
     NSString *sectionValue =[standardUserDefaults stringForKey:@"section"];
-    NSString *idValue =[standardUserDefaults stringForKey:@"id"];
+    NSString *idValue =[standardUserDefaults stringForKey:@"lecturelessId"];
     
     
     [self course].text = courseValue;

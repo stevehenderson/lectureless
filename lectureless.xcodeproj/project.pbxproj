@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A40EE9E6180072F3002CB2AE /* SingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A40EE9E5180072F3002CB2AE /* SingletonObject.m */; };
-		A40EE9E81800C072002CB2AE /* NOGIT in Resources */ = {isa = PBXBuildFile; fileRef = A40EE9E71800C072002CB2AE /* NOGIT */; };
+		A40EE9EA1800CBA5002CB2AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A40EE9E91800CBA5002CB2AE /* AppDelegate.m */; };
 		A473415B17FD0468000F8897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A473415A17FD0468000F8897 /* Foundation.framework */; };
 		A473415D17FD0468000F8897 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A473415C17FD0468000F8897 /* CoreGraphics.framework */; };
 		A473415F17FD0468000F8897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A473415E17FD0468000F8897 /* UIKit.framework */; };
 		A473416517FD0468000F8897 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A473416317FD0468000F8897 /* InfoPlist.strings */; };
 		A473416717FD0468000F8897 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A473416617FD0468000F8897 /* main.m */; };
-		A473416B17FD0468000F8897 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A473416A17FD0468000F8897 /* AppDelegate.m */; };
 		A473416E17FD0468000F8897 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A473416C17FD0468000F8897 /* Main_iPhone.storyboard */; };
 		A473417117FD0468000F8897 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A473416F17FD0468000F8897 /* Main_iPad.storyboard */; };
 		A473417417FD0468000F8897 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A473417317FD0468000F8897 /* FirstViewController.m */; };
@@ -50,7 +49,7 @@
 /* Begin PBXFileReference section */
 		A40EE9E4180072F3002CB2AE /* SingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonObject.h; sourceTree = "<group>"; };
 		A40EE9E5180072F3002CB2AE /* SingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonObject.m; sourceTree = "<group>"; };
-		A40EE9E71800C072002CB2AE /* NOGIT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOGIT; sourceTree = "<group>"; };
+		A40EE9E91800CBA5002CB2AE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A473415717FD0468000F8897 /* lectureless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lectureless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A473415A17FD0468000F8897 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A473415C17FD0468000F8897 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,7 +59,6 @@
 		A473416617FD0468000F8897 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A473416817FD0468000F8897 /* lectureless-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lectureless-Prefix.pch"; sourceTree = "<group>"; };
 		A473416917FD0468000F8897 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A473416A17FD0468000F8897 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A473416D17FD0468000F8897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		A473417017FD0468000F8897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		A473417217FD0468000F8897 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -165,7 +163,7 @@
 				A40EE9E4180072F3002CB2AE /* SingletonObject.h */,
 				A40EE9E5180072F3002CB2AE /* SingletonObject.m */,
 				A473416917FD0468000F8897 /* AppDelegate.h */,
-				A473416A17FD0468000F8897 /* AppDelegate.m */,
+				A40EE9E91800CBA5002CB2AE /* AppDelegate.m */,
 				A473416C17FD0468000F8897 /* Main_iPhone.storyboard */,
 				A473416F17FD0468000F8897 /* Main_iPad.storyboard */,
 				A473417217FD0468000F8897 /* FirstViewController.h */,
@@ -185,7 +183,6 @@
 				A473416317FD0468000F8897 /* InfoPlist.strings */,
 				A473416617FD0468000F8897 /* main.m */,
 				A473416817FD0468000F8897 /* lectureless-Prefix.pch */,
-				A40EE9E71800C072002CB2AE /* NOGIT */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 			files = (
 				A473417117FD0468000F8897 /* Main_iPad.storyboard in Resources */,
 				A473417917FD0468000F8897 /* Images.xcassets in Resources */,
-				A40EE9E81800C072002CB2AE /* NOGIT in Resources */,
 				A473416E17FD0468000F8897 /* Main_iPhone.storyboard in Resources */,
 				A473416517FD0468000F8897 /* InfoPlist.strings in Resources */,
 			);
@@ -309,9 +305,9 @@
 			files = (
 				A473417717FD0468000F8897 /* SecondViewController.m in Sources */,
 				A40EE9E6180072F3002CB2AE /* SingletonObject.m in Sources */,
-				A473416B17FD0468000F8897 /* AppDelegate.m in Sources */,
 				A473417417FD0468000F8897 /* FirstViewController.m in Sources */,
 				A473416717FD0468000F8897 /* main.m in Sources */,
+				A40EE9EA1800CBA5002CB2AE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
