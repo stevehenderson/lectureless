@@ -186,7 +186,7 @@
                             <constraint firstItem="Rcl-BI-nKz" firstAttribute="trailing" secondItem="QGm-hS-muD" secondAttribute="trailing" id="zbZ-ve-L8P"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="jJL-at-WYZ"/>
+                    <tabBarItem key="tabBarItem" title="Poll" image="first" id="jJL-at-WYZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="comprehensionSlider" destination="67J-D5-hDV" id="DnM-Ip-X0w"/>
@@ -269,7 +269,7 @@
                             <constraint firstAttribute="trailing" secondItem="0AS-id-vYH" secondAttribute="trailing" constant="20" symbolic="YES" id="mnO-w4-hAz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="9bc-Y5-PDA"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="second" id="9bc-Y5-PDA"/>
                     <connections>
                         <outlet property="course" destination="Iq4-sU-6xH" id="bYP-fb-UsX"/>
                         <outlet property="section" destination="CC2-0V-P2V" id="bF7-AY-fij"/>
