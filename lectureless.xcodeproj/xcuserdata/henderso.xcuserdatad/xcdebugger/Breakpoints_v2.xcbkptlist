@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "lectureless/FirstViewController.m"
-            timestampString = "402701848.361201"
+            timestampString = "402891986.310678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-pushLatest"
             landmarkType = "5">
          </BreakpointContent>

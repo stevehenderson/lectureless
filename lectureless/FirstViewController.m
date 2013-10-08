@@ -33,29 +33,37 @@
 - (void)viewDidLoad
 {
     
+    
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    
     // create a standardUserDefaults variable
     standardUserDefaults = [NSUserDefaults standardUserDefaults];
-
+    
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"course"] == nil) {
         [standardUserDefaults setObject:@"UNSET" forKey:@"course"];
         [standardUserDefaults synchronize];
     }
-  
+    
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"section"] == nil) {
         [standardUserDefaults setObject:@"UNSET" forKey:@"section"];
         [standardUserDefaults synchronize];
     }
-  
+    
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"lecturelessId"] == nil) {
         NSString *vendorID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
         [standardUserDefaults setObject:vendorID forKey:@"lecturelessId"];
         [standardUserDefaults synchronize];
     }
+
+    
+       
     
     
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
