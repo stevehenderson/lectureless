@@ -32,7 +32,6 @@
 		A48F929917FE639000ABCC1C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48F929817FE639000ABCC1C /* MobileCoreServices.framework */; };
 		A48F929B17FE639C00ABCC1C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48F929A17FE639C00ABCC1C /* QuartzCore.framework */; };
 		A48F929D17FE63A500ABCC1C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48F929C17FE63A500ABCC1C /* Security.framework */; };
-		A48F929F17FE63B000ABCC1C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48F929E17FE63B000ABCC1C /* StoreKit.framework */; };
 		A48F92A117FE63BF00ABCC1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48F92A017FE63BF00ABCC1C /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 		A48F929817FE639000ABCC1C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A48F929A17FE639C00ABCC1C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A48F929C17FE63A500ABCC1C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		A48F929E17FE63B000ABCC1C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A48F92A017FE63BF00ABCC1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -89,7 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48F92A117FE63BF00ABCC1C /* SystemConfiguration.framework in Frameworks */,
-				A48F929F17FE63B000ABCC1C /* StoreKit.framework in Frameworks */,
 				A48F929D17FE63A500ABCC1C /* Security.framework in Frameworks */,
 				A48F929B17FE639C00ABCC1C /* QuartzCore.framework in Frameworks */,
 				A48F929917FE639000ABCC1C /* MobileCoreServices.framework in Frameworks */,
@@ -140,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				A48F92A017FE63BF00ABCC1C /* SystemConfiguration.framework */,
-				A48F929E17FE63B000ABCC1C /* StoreKit.framework */,
 				A48F929C17FE63A500ABCC1C /* Security.framework */,
 				A48F929A17FE639C00ABCC1C /* QuartzCore.framework */,
 				A48F929817FE639000ABCC1C /* MobileCoreServices.framework */,
@@ -252,6 +248,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Steve Henderson";
 				TargetAttributes = {
+					A473415617FD0468000F8897 = {
+						DevelopmentTeam = 3PMSQY8REZ;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
 					A473417D17FD0469000F8897 = {
 						TestTargetID = A473415617FD0468000F8897;
 					};
@@ -444,7 +448,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Steven Henderson (559R6DD2V3)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/henderso/dev/lectureless/lectureless,
@@ -453,6 +458,8 @@
 				GCC_PREFIX_HEADER = "lectureless/lectureless-Prefix.pch";
 				INFOPLIST_FILE = "lectureless/lectureless-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DF09388B-B89B-4977-A565-022C9E3AFDC1";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -462,7 +469,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Steven Henderson (559R6DD2V3)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/henderso/dev/lectureless/lectureless,
@@ -471,6 +479,8 @@
 				GCC_PREFIX_HEADER = "lectureless/lectureless-Prefix.pch";
 				INFOPLIST_FILE = "lectureless/lectureless-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DF09388B-B89B-4977-A565-022C9E3AFDC1";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -102,7 +102,7 @@
     [testObject setObject:clientID forKey:@"lecturelessId"];
     
     
-    [testObject save];
+    [testObject saveInBackground];
     
 }
 
@@ -111,7 +111,7 @@
     UISlider *stepper = (UISlider *) sender;
     stepper.continuous=false;
    
-    NSLog(@"Comprehension now %.1f", [stepper value]);
+    //NSLog(@"Comprehension now %.1f", [stepper value]);
     comprehension=stepper.value;
     [self pushLatest];
 }
@@ -120,7 +120,7 @@
 - (void) updateMotivation :(id)sender {
     UISlider *stepper = (UISlider *) sender;
     stepper.continuous=false;
-    NSLog(@"Motivation now %.1f", [stepper value]);
+    //NSLog(@"Motivation now %.1f", [stepper value]);
     motivation=stepper.value;
     [self pushLatest];
 }
@@ -129,7 +129,7 @@
 - (void) updateInteraction :(id)sender {
     UISlider *stepper = (UISlider *) sender;
     stepper.continuous=false;
-    NSLog(@"Interaction now %.1f", [stepper value]);
+    //NSLog(@"Interaction now %.1f", [stepper value]);
     interaction=stepper.value;
     [self pushLatest];
 }

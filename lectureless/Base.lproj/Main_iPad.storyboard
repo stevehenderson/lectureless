@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="lectureLess" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-Op-S53">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="lectureLess" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-Op-S53">
                                 <rect key="frame" x="20" y="29" width="728" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -26,164 +26,147 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Comprehension" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mAG-50-hyF">
-                                <rect key="frame" x="244" y="100" width="280" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="11h-PR-sU7"/>
-                                    <constraint firstAttribute="width" constant="280" id="fgr-OQ-Hch"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="I'm Lost" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-KS-O9v">
-                                <rect key="frame" x="13" y="234" width="86" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="IkE-v2-7rd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="I Understand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="97" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-Oh-RrK">
-                                <rect key="frame" x="663" y="234" width="97" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="UJ0-7n-clQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="67J-D5-hDV">
-                                <rect key="frame" x="11" y="193" width="725" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="comprehensionTouchUpInside:" destination="JPc-hY-4sf" eventType="touchUpInside" id="sIb-wd-YsV"/>
-                                    <action selector="comprehensionTouchUpOutside:" destination="JPc-hY-4sf" eventType="valueChanged" id="dl6-yL-24S"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Interaction" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="YI6-nS-BTf">
-                                <rect key="frame" x="244" y="353" width="280" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="Ksd-FX-fPW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Instructor doing all the talking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="dmc-Qk-fxM">
-                                <rect key="frame" x="20" y="444" width="110" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="7aO-Di-GIl"/>
-                                    <constraint firstAttribute="height" constant="42" id="r0r-ok-oZg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Students doing all the talking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="114" translatesAutoresizingMaskIntoConstraints="NO" id="7hB-Sg-t5X">
-                                <rect key="frame" x="634" y="449" width="114" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="nKk-0N-DHp"/>
-                                    <constraint firstAttribute="height" constant="42" id="pgP-60-0Ot"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="etQ-Tx-u3n">
-                                <rect key="frame" x="18" y="403" width="718" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="interactionChanged:" destination="JPc-hY-4sf" eventType="valueChanged" id="YBO-fE-TxW"/>
-                                    <action selector="motivationDoneChanging:" destination="JPc-hY-4sf" eventType="touchDragExit" id="keP-Ce-Lmo"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Motivation" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j4A-SA-8r9">
-                                <rect key="frame" x="244" y="748" width="280" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="p9x-LR-8pn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Current topic is boring!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="1Un-3L-Rea">
-                                <rect key="frame" x="13" y="851" width="86" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="MOY-rb-ge0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="I'm motivated to learn this topic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-hS-muD">
-                                <rect key="frame" x="626" y="851" width="122" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="122" id="cSg-qT-2Ve"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rcl-BI-nKz">
-                                <rect key="frame" x="18" y="810" width="732" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="motivationChanged:" destination="JPc-hY-4sf" eventType="valueChanged" id="iOB-ik-kGF"/>
-                                </connections>
-                            </slider>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9o-8M-Nkz">
+                                <rect key="frame" x="7" y="94" width="741" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Comprehension" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mAG-50-hyF">
+                                        <rect key="frame" x="228" y="20" width="280" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="11h-PR-sU7"/>
+                                            <constraint firstAttribute="width" constant="280" id="fgr-OQ-Hch"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="67J-D5-hDV">
+                                        <rect key="frame" x="-11" y="70" width="724" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="comprehensionTouchUpInside:" destination="JPc-hY-4sf" eventType="touchUpInside" id="sIb-wd-YsV"/>
+                                            <action selector="comprehensionTouchUpOutside:" destination="JPc-hY-4sf" eventType="valueChanged" id="dl6-yL-24S"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I Understand" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="97" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-Oh-RrK">
+                                        <rect key="frame" x="624" y="111" width="97" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="UJ0-7n-clQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I'm Lost" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-KS-O9v">
+                                        <rect key="frame" x="11" y="101" width="86" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="IkE-v2-7rd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIN-t3-k5f">
+                                <rect key="frame" x="7" y="316" width="741" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Interaction" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="YI6-nS-BTf">
+                                        <rect key="frame" x="225" y="20" width="280" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Ksd-FX-fPW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="etQ-Tx-u3n">
+                                        <rect key="frame" x="6" y="70" width="718" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="interactionChanged:" destination="JPc-hY-4sf" eventType="valueChanged" id="YBO-fE-TxW"/>
+                                            <action selector="motivationDoneChanging:" destination="JPc-hY-4sf" eventType="touchDragExit" id="keP-Ce-Lmo"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Instructor doing all the talking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="dmc-Qk-fxM">
+                                        <rect key="frame" x="8" y="100" width="110" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Students doing all the talking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="114" translatesAutoresizingMaskIntoConstraints="NO" id="7hB-Sg-t5X">
+                                        <rect key="frame" x="608" y="100" width="114" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="nKk-0N-DHp"/>
+                                            <constraint firstAttribute="height" constant="42" id="pgP-60-0Ot"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abM-8Y-ICw">
+                                <rect key="frame" x="7" y="532" width="741" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Motivation" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j4A-SA-8r9">
+                                        <rect key="frame" x="223" y="20" width="280" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="p9x-LR-8pn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rcl-BI-nKz">
+                                        <rect key="frame" x="4" y="70" width="726" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="motivationChanged:" destination="JPc-hY-4sf" eventType="valueChanged" id="iOB-ik-kGF"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="Current topic is boring!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="1Un-3L-Rea">
+                                        <rect key="frame" x="6" y="98" width="86" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="MOY-rb-ge0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I'm motivated to learn this topic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-hS-muD">
+                                        <rect key="frame" x="606" y="98" width="122" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="122" id="cSg-qT-2Ve"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="1Un-3L-Rea" firstAttribute="top" secondItem="Rcl-BI-nKz" secondAttribute="bottom" constant="16" id="0WG-KM-ob2"/>
-                            <constraint firstItem="Rcl-BI-nKz" firstAttribute="top" secondItem="j4A-SA-8r9" secondAttribute="bottom" constant="20" id="1O0-O7-gzh"/>
-                            <constraint firstItem="1Un-3L-Rea" firstAttribute="leading" secondItem="fsa-KS-O9v" secondAttribute="leading" id="1bC-bf-Xdl"/>
-                            <constraint firstItem="Rcl-BI-nKz" firstAttribute="leading" secondItem="dmc-Qk-fxM" secondAttribute="leading" id="2v5-ah-NRu"/>
-                            <constraint firstAttribute="bottom" secondItem="j4A-SA-8r9" secondAttribute="bottom" constant="234" id="3ME-AQ-wYn"/>
-                            <constraint firstItem="etQ-Tx-u3n" firstAttribute="trailing" secondItem="67J-D5-hDV" secondAttribute="trailing" id="5xh-pW-PKZ"/>
-                            <constraint firstAttribute="trailing" secondItem="6tA-Oh-RrK" secondAttribute="trailing" constant="8" id="7RS-Ib-y26"/>
-                            <constraint firstItem="etQ-Tx-u3n" firstAttribute="leading" secondItem="dmc-Qk-fxM" secondAttribute="leading" id="BBI-zs-1fP"/>
-                            <constraint firstItem="etQ-Tx-u3n" firstAttribute="top" secondItem="YI6-nS-BTf" secondAttribute="bottom" constant="8" symbolic="YES" id="BhS-Ad-ph2"/>
-                            <constraint firstItem="1Un-3L-Rea" firstAttribute="baseline" secondItem="QGm-hS-muD" secondAttribute="baseline" id="EpF-wh-4Lr"/>
-                            <constraint firstItem="1Un-3L-Rea" firstAttribute="trailing" secondItem="fsa-KS-O9v" secondAttribute="trailing" id="GIu-pV-z1B"/>
-                            <constraint firstItem="7hB-Sg-t5X" firstAttribute="top" secondItem="etQ-Tx-u3n" secondAttribute="bottom" constant="13" id="L23-X2-mEm"/>
-                            <constraint firstAttribute="trailing" secondItem="N4C-Op-S53" secondAttribute="trailing" constant="20" symbolic="YES" id="LL0-PR-gDV"/>
+                            <constraint firstAttribute="centerX" secondItem="NIN-t3-k5f" secondAttribute="centerX" id="20Y-M5-vHI"/>
+                            <constraint firstAttribute="centerX" secondItem="X9o-8M-Nkz" secondAttribute="centerX" id="76j-by-WXI"/>
+                            <constraint firstAttribute="centerX" secondItem="abM-8Y-ICw" secondAttribute="centerX" id="GLU-rA-3QY"/>
                             <constraint firstItem="N4C-Op-S53" firstAttribute="top" secondItem="tgI-kI-KDZ" secondAttribute="bottom" constant="9" id="O1G-Hb-lJO"/>
-                            <constraint firstItem="67J-D5-hDV" firstAttribute="leading" secondItem="b3d-jH-Xox" secondAttribute="leading" constant="13" id="Pyk-xc-pBl"/>
-                            <constraint firstItem="mAG-50-hyF" firstAttribute="leading" secondItem="YI6-nS-BTf" secondAttribute="leading" id="W9y-Rb-9bd"/>
-                            <constraint firstItem="YI6-nS-BTf" firstAttribute="top" secondItem="b3d-jH-Xox" secondAttribute="top" constant="353" id="Y1X-5D-zHS"/>
-                            <constraint firstItem="N4C-Op-S53" firstAttribute="leading" secondItem="b3d-jH-Xox" secondAttribute="leading" constant="20" symbolic="YES" id="aNe-U6-eu5"/>
-                            <constraint firstItem="mAG-50-hyF" firstAttribute="top" secondItem="N4C-Op-S53" secondAttribute="bottom" constant="29" id="bDd-da-Ocn"/>
-                            <constraint firstAttribute="trailing" secondItem="67J-D5-hDV" secondAttribute="trailing" constant="34" id="bON-Zu-eww"/>
-                            <constraint firstItem="dmc-Qk-fxM" firstAttribute="top" secondItem="etQ-Tx-u3n" secondAttribute="bottom" constant="8" symbolic="YES" id="c5p-0i-pbj"/>
-                            <constraint firstItem="fsa-KS-O9v" firstAttribute="top" secondItem="67J-D5-hDV" secondAttribute="bottom" constant="8" symbolic="YES" id="cpX-Tk-4YY"/>
-                            <constraint firstItem="etQ-Tx-u3n" firstAttribute="leading" secondItem="N4C-Op-S53" secondAttribute="leading" id="gDm-ZR-0Tr"/>
-                            <constraint firstItem="fsa-KS-O9v" firstAttribute="leading" secondItem="67J-D5-hDV" secondAttribute="leading" id="ghs-hH-ywA"/>
-                            <constraint firstItem="LTL-jD-sdN" firstAttribute="top" secondItem="1Un-3L-Rea" secondAttribute="bottom" constant="82" id="htr-oq-qY2"/>
-                            <constraint firstItem="67J-D5-hDV" firstAttribute="top" secondItem="mAG-50-hyF" secondAttribute="bottom" constant="51" id="iFM-fS-WjB"/>
-                            <constraint firstItem="YI6-nS-BTf" firstAttribute="trailing" secondItem="mAG-50-hyF" secondAttribute="trailing" id="ial-Rd-8Za"/>
-                            <constraint firstItem="j4A-SA-8r9" firstAttribute="leading" secondItem="YI6-nS-BTf" secondAttribute="leading" id="nzy-5w-rWg"/>
-                            <constraint firstItem="N4C-Op-S53" firstAttribute="centerX" secondItem="mAG-50-hyF" secondAttribute="centerX" id="pnn-O6-3F7"/>
-                            <constraint firstItem="fsa-KS-O9v" firstAttribute="baseline" secondItem="6tA-Oh-RrK" secondAttribute="baseline" id="q4L-o7-Vzy"/>
-                            <constraint firstItem="Rcl-BI-nKz" firstAttribute="trailing" secondItem="7hB-Sg-t5X" secondAttribute="trailing" id="sNB-Fr-e1D"/>
-                            <constraint firstItem="QGm-hS-muD" firstAttribute="top" secondItem="1Un-3L-Rea" secondAttribute="top" id="vBP-Q3-QZ1"/>
-                            <constraint firstItem="7hB-Sg-t5X" firstAttribute="trailing" secondItem="N4C-Op-S53" secondAttribute="trailing" id="vhD-wZ-d2s"/>
-                            <constraint firstItem="6tA-Oh-RrK" firstAttribute="top" secondItem="67J-D5-hDV" secondAttribute="bottom" constant="8" symbolic="YES" id="wrb-NW-i5D"/>
-                            <constraint firstItem="j4A-SA-8r9" firstAttribute="trailing" secondItem="YI6-nS-BTf" secondAttribute="trailing" id="xly-Ko-sWJ"/>
-                            <constraint firstItem="Rcl-BI-nKz" firstAttribute="trailing" secondItem="QGm-hS-muD" secondAttribute="trailing" id="zbZ-ve-L8P"/>
+                            <constraint firstAttribute="centerX" secondItem="N4C-Op-S53" secondAttribute="centerX" id="cPb-Fm-xDJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Poll" image="first" id="jJL-at-WYZ"/>
