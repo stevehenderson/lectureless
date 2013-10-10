@@ -72,8 +72,9 @@
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "icon-72@2x-1.png",
       "scale" : "2x"
     },
     {
